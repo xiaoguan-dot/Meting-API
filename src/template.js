@@ -178,7 +178,10 @@ export const docs = (c) => {
         ap.list.clear();
     }
     function sendMusicRequest(mserver,mclass,mid) {
-const url = "api?server="+encodeURIComponent(mserver)+"&type="+encodeURIComponent(mclass)+"&id=encodeURIComponent(mid)";
+    const mserverv= encodeURIComponent(mserver);
+    const mclassv= encodeURIComponent(mclass);
+    const midv= encodeURIComponent(mid);
+const url = "api?server="+mserverv+"&type="+mclassv+"&id="+midv;
 const xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.onload = function() {
