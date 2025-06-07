@@ -46,20 +46,20 @@ let html = `
     </ol>
     <div class="audiolist">
         `
-        Object.keys(example).map(provider => {
-        Object.keys(example[provider]).map(type => {
+Object.keys(example).map(provider => {
+    Object.keys(example[provider]).map(type => {
         if (!example[provider][type].show) return
 
         html += `
-        <div>
-            <p>${provider} ${type}</p>
-            <meting-js server="${provider}" type="${type}" id="${example[provider][type].value}" list-folded=true />
-        </div>
-        <br />
-        `
-        })
-        })
-        html += `
+    <div>
+        <p>${provider} ${type}</p>
+        <meting-js server="${provider}" type="${type}" id="${example[provider][type].value}" list-folded=true />
+    </div>
+    <br/>
+`
+    })
+})
+html += `
     </div>
 </body>
 <script>
