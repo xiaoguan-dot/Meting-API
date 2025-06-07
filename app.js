@@ -12,6 +12,7 @@ app.use('*', cors())
 app.use('*', logger())
 app.get('/api', api)
 app.get('/test', handler)
+app.get('/docs', docs)
 app.get('/', (c) => {
 
     return c.html(`<!doctype html>
