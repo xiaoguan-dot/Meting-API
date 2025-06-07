@@ -1,5 +1,5 @@
 import api from './src/service/api.js'
-import { handler } from './src/template.js'
+import { handler, docs } from './src/template.js'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
 import { cors } from 'hono/cors'
