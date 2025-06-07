@@ -1,5 +1,5 @@
 import api from './src/service/api.js'
-import { handler, docs } from './src/template.js'
+import { handler } from './src/template.js'
 import { Hono } from 'hono'
 import { logger } from 'hono/logger'
 import { cors } from 'hono/cors'
@@ -12,7 +12,6 @@ app.use('*', cors())
 app.use('*', logger())
 app.get('/api', api)
 app.get('/test', handler)
-app.get('/docs', docs)
 app.get('/', (c) => {
 
     return c.html(`<!doctype html>
