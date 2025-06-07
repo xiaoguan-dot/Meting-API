@@ -8,7 +8,7 @@ let html = `
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>小关のMeting | Test/title>
+    <title>小关のMeting | Test</title>
     <link rel="stylesheet" href="https://unpkg.com/zui@3.0.0/dist/zui.css">
     <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
 </head>
