@@ -1,6 +1,7 @@
 import example from "./example.js"
-export const handler = (c) => {
-    return c.html(`<!DOCTYPE html>
+
+let html = `
+<!DOCTYPE html>
 <html lang="zh-CN" id="htmlid">
 
 <head>
@@ -44,7 +45,7 @@ export const handler = (c) => {
     </ol>
     <div class="audiolist">
         `
-        ,Object.keys(example).map(provider => {
+        Object.keys(example).map(provider => {
         Object.keys(example[provider]).map(type => {
         if (!example[provider][type].show) return
 
@@ -57,7 +58,7 @@ export const handler = (c) => {
         `
         })
         })
-        ,html += `
+        html += `
     </div>
 </body>
 <script>
@@ -73,11 +74,11 @@ export const handler = (c) => {
 </script>
 </script>
 
-</html>`)
-}
-
+</html>
+`
 export const docs = (c) => {
-    return c.html(`<!doctype html>
+    return c.html(`
+<!doctype html>
 <html lang="zh-CN" id="htmlid">
 
 <head>
@@ -213,3 +214,7 @@ export const docs = (c) => {
 
 </html>`)
 }
+export const handler = (c) => {
+    return c.html(html)
+}
+
