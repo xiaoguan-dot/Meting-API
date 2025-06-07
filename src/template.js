@@ -1,7 +1,7 @@
 import example from "./example.js";
 import get_url from './util.js';
 
-// 定义全局变量，方便后续调用
+// 定义全局变量，方便后续调用 
 const meting_api = 'api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
 
 // 主题切换功能
