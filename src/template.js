@@ -1,5 +1,5 @@
 import example from "./example.js"
-import get_url from "./util.js"
+import { get_runtime, get_url } from "./util.js"
 
 let html = `
 <!DOCTYPE html>
