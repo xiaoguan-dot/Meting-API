@@ -101,7 +101,7 @@ export const docs = (c) => {
         ap.list.clear();
     }
     function sendMusicRequest(mserver,mclass,mid) {
-        const url = `https://met.api.xiaoguan.fit/api?server=${encodeURIComponent(mserver)}&type=${encodeURIComponent(mclass)}&id=${encodeURIComponent(mid)}`;
+        const url = \`api?server=${encodeURIComponent(mserver)}&type=${encodeURIComponent(mclass)}&id=${encodeURIComponent(mid)}\`;
         const xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.onload = function() {
@@ -135,7 +135,8 @@ export const docs = (c) => {
     function style_light() { let click = document.getElementById('style_light'); click.classList.add("active"); let rd = document.getElementById('style_dark'); rd.classList.remove("active"); let ra = document.getElementById('style_auto'); ra.classList.remove("active"); let element = document.getElementById('htmlid'); element.className = "light"; }
 </script>
 
-</html>`}
+</html>`)
+}
 export const handler = (c) => {
     return c.html(`<!DOCTYPE html>
 <html lang="zh-CN" id="htmlid">
