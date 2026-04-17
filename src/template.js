@@ -112,7 +112,7 @@ export const docs = (c) => {
                 class="icon icon-desktop"></i></button>
     </div>
     <div class="text-lg" style="margin: 20px;padding: 10px;">
-        <p>这里是 Meting 的文档。Mettng 是一个用于网页播放器 APlayer 以及其他软件调用的程序接口，可便捷的部署至无服务器平台，如 Vercel。</p>
+        <p>这里是 Meting 的文档。Meting 是一个用于网页播放器 APlayer 以及其他软件调用的程序接口，可便捷的部署至无服务器平台，如 Vercel。</p>
         <br>
         <h2>接口使用说明</h2>
         <div class="panel font-mono text-xl">
